@@ -40,3 +40,8 @@ Python 2.6.6 (r266:84292, Jan 22 2014, 09:42:36)
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import pyodbc
 >>> 
+>>> s= pyodbc.connect('DRIVER={DB2};SERVER=127.0.0.0;DATABASE=dataname;UID=username;PWD=userpass')
+>>> 
+>>> cur=s.cursor()
+>>> cur.execute('select * from administrator.hn_branch')
+<pyodbc.Cursor object at 0x7fd727db77b0>
