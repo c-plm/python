@@ -1,0 +1,79 @@
+安装ODBC支持：
+[root@it-db2 etc]# rpm -qa | grep ODBC
+unixODBC-2.2.14-12.el6_3.x86_64
+unixODBC-devel-2.2.14-12.el6_3.x86_64
+unixODBC-kde-2.2.14-12.el6_3.x86_64
+其中unixODBC-ked* 是图形配置界面。可以通过执行ODBCConfig命令启动。
+
+配置数据源。因我的电脑已成功安装了DB29.1_LINUX_64，并且创建了实例db2inst1(可通过db2ilist命令例出所有实例，该命令只能在实例用户下使用。)
+1、配置驱动：看最后四行
+[root@it-db2 etc]# vi /etc/odbcinst.ini 
+
+# Example driver definitions
+
+# Driver from the postgresql-odbc package
+# Setup from the unixODBC package
+[PostgreSQL]
+Description     = ODBC for PostgreSQL
+Driver          = /usr/lib/psqlodbc.so
+Setup           = /usr/lib/libodbcpsqlS.so
+Driver64        = /usr/lib64/psqlodbc.so
+Setup64         = /usr/lib64/libodbcpsqlS.so
+FileUsage       = 1
+
+
+# Driver from the mysql-connector-odbc package
+# Setup from the unixODBC package
+[MySQL]
+Description     = ODBC for MySQL
+Driver          = /usr/lib/libmyodbc5.so
+"/etc/odbcinst.ini" 29L, 714C
+# Example driver definitions
+
+# Driver from the postgresql-odbc package
+# Setup from the unixODBC package
+[PostgreSQL]
+Description     = ODBC for PostgreSQL
+Driver          = /usr/lib/psqlodbc.so
+Setup           = /usr/lib/libodbcpsqlS.so
+Driver64        = /usr/lib64/psqlodbc.so
+Setup64         = /usr/lib64/libodbcpsqlS.so
+FileUsage       = 1
+
+
+# Driver from the mysql-connector-odbc package
+# Setup from the unixODBC package
+[MySQL]
+Description     = ODBC for MySQL
+Driver          = /usr/lib/libmyodbc5.so
+Setup           = /usr/lib/libodbcmyS.so
+Driver64        = /usr/lib64/libmyodbc5.so
+Setup64         = /usr/lib64/libodbcmyS.so
+FileUsage       = 1
+
+#以下是4月1日添加
+[DB2]
+Description     = ODBC for DB2
+Driver64        = /opt/ibm/db2/V9.1/lib64/libdb2o.so
+FileUsage       = 1
+DontDLCLose     = 1
+
+2、配置调用：
+[root@it-db2 etc]# vi /etc/odbc.ini 
+[mydb]
+Description  =  test to DB2
+Driver       = DB2
+
+测试是否正常连接：
+[root@it-db2 etc]# isql -v mydb db2inst1 okm123
++---------------------------------------+
+| Connected!                            |
+|                                       |
+| sql-statement                         |
+| help [tablename]                      |
+| quit                                  |
+|                                       |
++---------------------------------------+
+SQL> 
+
+已经配置成功！
