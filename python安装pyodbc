@@ -1,0 +1,42 @@
+http://code.google.com/p/pyodbc/downloads/list下载pyodbc源码包
+$cd pyodbc-3.0.6
+$python setup.py build
+$python setup.py install
+# python setup.py build
+running build
+running build_ext
+building 'pyodbc' extension
+creating build
+creating build/temp.linux-x86_64-2.6
+creating build/temp.linux-x86_64-2.6/home
+creating build/temp.linux-x86_64-2.6/home/samba
+creating build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7
+creating build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src
+gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPYODBC_VERSION=3.0.7 -I/usr/include/python2.6 -c /home/samba/pyodbc-3.0.7/src/cursor.cpp -o build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/cursor.o -Wno-write-strings
+gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPYODBC_VERSION=3.0.7 -I/usr/include/python2.6 -c /home/samba/pyodbc-3.0.7/src/errors.cpp -o build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/errors.o -Wno-write-strings
+gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPYODBC_VERSION=3.0.7 -I/usr/include/python2.6 -c /home/samba/pyodbc-3.0.7/src/pyodbccompat.cpp -o build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/pyodbccompat.o -Wno-write-strings
+gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPYODBC_VERSION=3.0.7 -I/usr/include/python2.6 -c /home/samba/pyodbc-3.0.7/src/sqlwchar.cpp -o build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/sqlwchar.o -Wno-write-strings
+gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPYODBC_VERSION=3.0.7 -I/usr/include/python2.6 -c /home/samba/pyodbc-3.0.7/src/pyodbcmodule.cpp -o build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/pyodbcmodule.o -Wno-write-strings
+gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPYODBC_VERSION=3.0.7 -I/usr/include/python2.6 -c /home/samba/pyodbc-3.0.7/src/params.cpp -o build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/params.o -Wno-write-strings
+gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPYODBC_VERSION=3.0.7 -I/usr/include/python2.6 -c /home/samba/pyodbc-3.0.7/src/pyodbcdbg.cpp -o build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/pyodbcdbg.o -Wno-write-strings
+gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPYODBC_VERSION=3.0.7 -I/usr/include/python2.6 -c /home/samba/pyodbc-3.0.7/src/connection.cpp -o build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/connection.o -Wno-write-strings
+gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPYODBC_VERSION=3.0.7 -I/usr/include/python2.6 -c /home/samba/pyodbc-3.0.7/src/row.cpp -o build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/row.o -Wno-write-strings
+gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPYODBC_VERSION=3.0.7 -I/usr/include/python2.6 -c /home/samba/pyodbc-3.0.7/src/buffer.cpp -o build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/buffer.o -Wno-write-strings
+gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPYODBC_VERSION=3.0.7 -I/usr/include/python2.6 -c /home/samba/pyodbc-3.0.7/src/cnxninfo.cpp -o build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/cnxninfo.o -Wno-write-strings
+gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPYODBC_VERSION=3.0.7 -I/usr/include/python2.6 -c /home/samba/pyodbc-3.0.7/src/getdata.cpp -o build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/getdata.o -Wno-write-strings
+creating build/lib.linux-x86_64-2.6
+g++ -pthread -shared build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/cursor.o build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/errors.o build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/pyodbccompat.o build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/sqlwchar.o build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/pyodbcmodule.o build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/params.o build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/pyodbcdbg.o build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/connection.o build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/row.o build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/buffer.o build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/cnxninfo.o build/temp.linux-x86_64-2.6/home/samba/pyodbc-3.0.7/src/getdata.o -L/usr/lib64 -lodbc -lpython2.6 -o build/lib.linux-x86_64-2.6/pyodbc.so
+# python setup.py install
+running install
+running build
+running build_ext
+running install_lib
+copying build/lib.linux-x86_64-2.6/pyodbc.so -> /usr/lib64/python2.6/site-packages
+running install_egg_info
+Writing /usr/lib64/python2.6/site-packages/pyodbc-3.0.7-py2.6.egg-info
+# python
+Python 2.6.6 (r266:84292, Jan 22 2014, 09:42:36) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-4)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pyodbc
+>>> 
