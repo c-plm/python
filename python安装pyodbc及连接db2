@@ -46,4 +46,4 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> cur.execute('select * from administrator.hn_branch')
 <pyodbc.Cursor object at 0x7fd727db77b0>
 如果SQL语句中包含中文，则将语句转码：
->>> cur.execute("select * from administrator.hn_branch where name=郑州'")
+>>> cur.execute("select * from administrator.hn_branch where name=郑州'".decode('utf-8'))
